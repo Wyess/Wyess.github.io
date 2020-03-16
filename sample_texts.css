@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'V Shorthand';
+    src: url('font/VShorthand-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Nakane Shorthand';
+    src: url('font/NakaneKwangaku-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Waseda Shorthand';
+    src: url('font/WasedaShorthand-Regular.woff') format('woff');
+}
+
+span.v_shorthand {
+    font-family: 'V Shorthand';
+    font-size: 2em;
+}
+
+span.nakane_shorthand {
+    font-family: 'Nakane Shorthand';
+    font-size: 2em;
+}
+
+span.waseda_shorthand {
+    font-family: 'Waseda Shorthand';
+    font-size: 2em;
+}

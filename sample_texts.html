@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="sample_texts.css">
+<script type="text/javascript">
+function changeText() {
+    var spn_v = document.getElementById('field_v');
+    var spn_nakane = document.getElementById('field_nakane');
+    var spn_waseda = document.getElementById('field_waseda');
+    var inputTextArea = document.getElementById('inputTextArea');
+    var s = inputTextArea.value;
+    s = s.replace(/(?:\r\n|\r|\n)/g, "<br>");
+    //spn_v.innerHTML = s;
+    //spn_nakane.innerHTML = s;
+    spn_waseda.innerHTML = s;
+}
+</script>
+</head>
+
+<body>
+<br><br><br>
+<span id='field_v' class='v_shorthand'></span><br>
+<span id='field_nakane' class='nakane_shorthand'></span><br>
+<span id='field_waseda' class='waseda_shorthand'></span><br>
+
+<textarea oninput="changeText();" id="inputTextArea" rows="4" cols="40"></textarea>
+
+</body>
+</html>
